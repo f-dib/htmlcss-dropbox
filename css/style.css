@@ -28,7 +28,7 @@ button{
 }
 
 .bg-light-blue{
-    height: 870px;
+    height: 740px;
     background-color: blue;
 }
 
@@ -74,14 +74,14 @@ nav div.nav, ul.nav-link{
 }
 
 #jumbotron{
-    height: 770px;
+    height: 640px;
     /* test */
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    max-width: 1250px;
+    max-width: 1200px;
     width: 100%;
 
     padding-top: 100px;
@@ -101,13 +101,13 @@ nav div.nav, ul.nav-link{
 
 .free-try{
     width: 40%;
-    height: 570px;
+    height: 440px;
     background-color: pink;
 }
 
 .jumbo-img{
     width: 60%;
-    height: 570px;
+    height: 440px;
 
     background-color: brown;
 }
@@ -120,7 +120,7 @@ nav div.nav, ul.nav-link{
     align-items: center;
     flex-wrap: wrap;
 
-    max-width: 1040px;
+    max-width: 1000px;
 
     width: 100%;
 
