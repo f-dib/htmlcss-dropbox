@@ -126,6 +126,7 @@ nav div.nav, ul.nav-link{
 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 150px;
 }
 
 .choice-of-plan{
@@ -159,5 +160,15 @@ nav div.nav, ul.nav-link{
     background-color: blueviolet;
 }
 
+.img-find{
+    width: 60%;
+    height: 540px;
+    background-color: beige;
+}
 
+.text-find{
+    width: 40%;
+    height: 540px;
+    background-color: beige;
+}
 /* end main */
