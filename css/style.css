@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px red dotted; */
+    border: 1px red dotted;
 }
 
 body{
@@ -111,20 +111,53 @@ nav div.nav, ul.nav-link{
 
     background-color: brown;
 }
-
-
 /* end jumbo */
 
-
-/* 
+/* main */
 .container{    
     display: flex;
+    justify-content: center;
     align-items: center;
-    
-    max-width: 1250px;
+    flex-wrap: wrap;
 
+    max-width: 1040px;
+
+    width: 100%;
 
     margin-left: auto;
     margin-right: auto;
 }
- */
+
+.choice-of-plan{
+    width: 100%;
+    height: 130px;
+    background-color: blueviolet;
+    /* test */
+
+    margin-bottom: 50px;
+}
+
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 1000px;
+
+    margin-bottom: 50px;
+}
+
+.column{
+    width: calc(100% / 3 - 25px * 3 /2);
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.row{
+    width: 100%;
+    height: 270px;
+    background-color: blueviolet;
+}
+
+
+/* end main */
