@@ -86,7 +86,7 @@ li a{
     max-width: 1200px;
     width: 100%;
 
-    padding-top: 100px;
+    margin-top: 100px;
 
     margin-left: auto;
     margin-right: auto;
@@ -240,6 +240,8 @@ a.find-more{
     height: 370px;
 
     background-color: lightblue;
+
+    margin-bottom: 150px;
 }
 
 .try-business{
@@ -247,4 +249,57 @@ a.find-more{
 
     background-color: orange;
 }
+
+/* fifth section */
+.column-container{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1000px;
+    width: 100%;
+}
+
+.FAQ{
+    width: 100%;
+    height: 100px;
+
+    background-color: green;
+}
 /* end main */
+
+/* footer */
+footer{
+    height: 570px;
+
+    padding-bottom: 50px;
+
+    background-color: black;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: flex-start;
+
+    max-width: 1200px;
+    width: 100%;
+
+    padding-top: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-link{
+    width: calc(100% / 5);
+    height: 250px;
+
+    background-color: blanchedalmond;
+}
+
+.choose-language{
+    width: calc(100% / 5);
+    height: 90px;
+
+    background-color: blanchedalmond;
+}
+/* end footer */
