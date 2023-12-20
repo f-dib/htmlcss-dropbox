@@ -32,6 +32,10 @@ button{
     background-color: #0061ff;
 }
 
+.btn-border-black{
+    border: 1px black solid;
+}
+
 .bg-light-blue{
     background-color: lightblue;
 }
@@ -97,6 +101,7 @@ li a{
     width: 100%;
 
     padding-top: 100px;
+    margin-bottom: 50px;
 
     font-size: 2.8em;
     font-weight: 800;
@@ -110,7 +115,7 @@ li a{
 
     width: 30%;
 
-    padding: 50px 30px 150px 0px;
+    padding: 0px 30px 150px 0px;
 }
 
 .arrow-down{
@@ -131,7 +136,7 @@ li a{
     position: absolute;
 
     left: 0;
-    top: 50px;
+    top: 0;
 
     width: 100%;
 }
@@ -141,7 +146,7 @@ li a{
 .container{    
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
 
     max-width: 1000px;
@@ -188,17 +193,26 @@ li a{
 
 /* second section */
 .img-find{
-    width: 60%;
-    height: 540px;
-    background-color: beige;
+    width: 60%;  
+}
+
+.img-find img{
+    width: 100%;
 }
 
 .text-find{
     width: 40%;
-    height: 540px;
-    background-color: beige;
+
+    padding: 50px;
 }
 
+.text-find h2{
+    margin-bottom: 1.3em;
+}
+
+.text-find p{
+    margin-bottom: 2.6em;
+}
 /* third section */
 .mini-title{
     width: 100%;
