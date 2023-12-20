@@ -162,11 +162,20 @@ li a{
 /* first section */
 .choice-of-plan{
     width: 100%;
-    height: 130px;
-    background-color: blueviolet;
-    /* test */
 
     margin-bottom: 50px;
+}
+
+.choice-of-plan h2{
+    margin-bottom: 65px;
+    font-size: 2em;
+
+    font-weight: 800;
+}
+
+.check-container{
+    display: flex;
+    gap: 50px;
 }
 
 .plan-price{
@@ -174,7 +183,6 @@ li a{
     justify-content: space-between;
 
     width: 100%;
-    height: 1000px;
 
     margin-bottom: 50px;
 }
@@ -182,16 +190,103 @@ li a{
 .column{
     width: calc(100% / 3 - 25px * 3 /2);
     height: 100%;
-    background-color: blueviolet;
+
+    border: 1px #999999 solid;
+}
+
+.text-info{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.top{
+    padding: 12px;
+
+    text-align: center;
+
+    border-bottom: 1px #999999 solid;
+}
+
+.text-info-central{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    padding: 40px 25px;
+}
+
+.plan-name{
+    font-size: 1.3em;
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.price{
+    font-size: 0.8em;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.plan-time{
+    font-size: 0.8em;
+    font-weight: 400;
+
+    color: #999999;
+}
+
+.text-body{
+    position: relative;
+
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.fa-plan{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+
+.buy-button{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.gray-line{
+    border-top: 1px #999999 solid;
+
+    width: 25%;
+}
+
+div.text-info.dots{
+    margin-bottom: 30px;
 }
 
 .row{
     width: 100%;
-    height: 270px;
-    background-color: blueviolet;
+    border: 1px #999999 solid;
 }
 
+.enterprise-info{
+    display: flex;
+    justify-content: space-between;
+}
 
+.info-left{
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+}
+
+.info-right{
+    width: 40%; 
+    padding: 40px 35px;
+}
 /* second section */
 .img-find{
     width: 60%;  
@@ -307,6 +402,12 @@ a.find-more{
 }
 
 /* fifth section */
+.mini-title.border-bottom, .border-bottom{
+    border-bottom: 1px #999999 solid;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
 .column-container{
     display: flex;
     flex-direction: column;
@@ -317,9 +418,7 @@ a.find-more{
 
 .FAQ{
     width: 100%;
-    height: 100px;
-
-    background-color: green;
+    padding-top: 50px;
 }
 /* end main */
 
@@ -351,7 +450,7 @@ footer{
     width: calc(100% / 5);
 }
 
-h4{
+h5{
     margin-bottom: 35px;
     
     font-size: 1.3em;
