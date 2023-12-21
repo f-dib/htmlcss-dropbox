@@ -1,11 +1,10 @@
+/* common elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
     font-family: 'Open Sans', sans-serif;
-    
-    /* border: 1px red dotted; */
 }
 
 body{
@@ -15,7 +14,6 @@ body{
 li{
     list-style: none;
 }
-
 
 button{
     color: black;
@@ -57,6 +55,11 @@ button:hover::before{
     background-color: lightblue;
 }
 
+a{
+    color: #0061ff;
+}
+/* end common elements */
+
 /* nav */
 nav{
     position: fixed;
@@ -72,6 +75,8 @@ nav{
     padding: 25px 20px;
 
     background-color: white;
+
+    min-width: 1100px;
 }
 
 img.logo{
@@ -194,9 +199,65 @@ li a:hover{
     font-weight: 800;
 }
 
+/* checkbox */
 .check-container{
     display: flex;
     gap: 50px;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    top: 6.5px;
+    left: 6.5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
 }
 
 .plan-price{
@@ -535,6 +596,8 @@ img.designit{
     top: 50px;
 
     font-family: 'FontAwesome';
+
+    transition: all .4s;
 }
 
 .hidden-text{
@@ -546,7 +609,7 @@ img.designit{
     padding-top: 50px;
 }
 
-.FAQ:hover .button-more::after:hover{
+.FAQ.button-more:hover:after{
     transform: rotate(180deg);
 }
 /* end main */
