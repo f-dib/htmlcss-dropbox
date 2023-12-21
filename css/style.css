@@ -24,6 +24,24 @@ button{
     padding: 7px 15px;
     font-size: 1em;
     cursor: pointer;
+    position: relative;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(239, 239, 240, .6);
+    transition: opacity .2s;
+    opacity: 0;
+    z-index: 2;
+}
+
+button:hover::before{
+    opacity: 1;
 }
 
 .btn-blue{
@@ -69,6 +87,7 @@ nav div.nav, ul.nav-link{
 }
 
 li a{
+    padding: 30px 0px;
     color: black;
     text-decoration: none;
 }
@@ -150,7 +169,6 @@ li a:hover{
 .container{    
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-wrap: wrap;
 
     max-width: 1000px;
@@ -401,6 +419,9 @@ img.designit{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: border-width .4s ease;
+    border: 0px solid rgba(255, 255, 255, 0.5)
 }
 
 .scale-white{
@@ -409,9 +430,12 @@ img.designit{
     filter: invert(100%) sepia(0%) saturate(7474%) hue-rotate(50deg) brightness(105%) contrast(109%);
 }
 
+.partner:hover{
+    border-width: 15px;
+}
+
 .bg-designit{
     background-color: #a2d39b;
-    border: 15px #d1e9cd solid;
 }
 
 .bg-arizona{
@@ -522,7 +546,7 @@ img.designit{
     padding-top: 50px;
 }
 
-.FAQ:hover .button-more{
+.FAQ:hover .button-more::after:hover{
     transform: rotate(180deg);
 }
 /* end main */
@@ -567,6 +591,10 @@ h5{
     padding-bottom: 1em;
 
     color: white;
+}
+
+.footer-link ul li a:hover{
+    text-decoration: underline;
 }
 
 /* footer end */
