@@ -68,10 +68,13 @@ nav div.nav, ul.nav-link{
     gap: 40px;
 }
 
-
 li a{
     color: black;
     text-decoration: none;
+}
+
+li a:hover{
+    border-bottom: 2px solid black;
 }
 /* end nav */
 
@@ -496,6 +499,8 @@ img.designit{
     padding-top: 50px;
 
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .button-more::after{
@@ -506,6 +511,19 @@ img.designit{
     top: 50px;
 
     font-family: 'FontAwesome';
+}
+
+.hidden-text{
+    display: none;
+}
+
+.FAQ:hover .hidden-text{
+    display: block;
+    padding-top: 50px;
+}
+
+.FAQ:hover .button-more{
+    transform: rotate(180deg);
 }
 /* end main */
 
