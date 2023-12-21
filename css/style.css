@@ -256,9 +256,7 @@ li a{
     gap: 35px;
 }
 
-.gray-line{
-    border-top: 1px #999999 solid;
-
+hr{
     width: 25%;
 }
 
@@ -496,6 +494,18 @@ img.designit{
 .FAQ{
     width: 100%;
     padding-top: 50px;
+
+    position: relative;
+}
+
+.button-more::after{
+    content: '\f078';
+
+    position: absolute;
+    right: 50px;
+    top: 50px;
+
+    font-family: 'FontAwesome';
 }
 /* end main */
 
